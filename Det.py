@@ -11,5 +11,5 @@ def det(M):
         #recursively call det on the matrix that includes everything except
         #the row and column that the current entry is in
         #multiply that by plus or minus the current element
-        rv+=elt*(-1)**i*det([M[k][:i]+M[k][i+1:] for k in range(1,len(M)])
+        rv+=elt*(-1)**i*det([M[k][:i]+M[k][i+1:] for k in range(1,len(M))])
     return rv
