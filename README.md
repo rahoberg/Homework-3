@@ -14,6 +14,6 @@ Even for large integers, Python took a little over 4 microseconds, and Cython to
 Just by adding variable types, FindPrimes became 11 times as fast. 
 
 For some reason my matrix multiplication function would not work in Sage even though it worked fine in my version of Python.
-Not sure what the problem is there. So Cython took about 10 microseconds, but I'm not sure how long the original Python was taking.
+Not sure what the problem is there. So Cython took about 10 microseconds for a 3x3 matrix, but I'm not sure how long the original Python was taking.
 
 For my determinant function, I got Cython to be about twice as fast as my Python implementation.
