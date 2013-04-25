@@ -11,6 +11,9 @@ is that I assume that we are factoring a C integer, which doesn't get that big.
 For SumsOfSquares, changing to Cython didn't make much difference.
 Even for large integers, Python took a little over 4 microseconds, and Cython took a little under 4 microseconds.
 
+Just by adding variable types, FindPrimes became 11 times as fast. 
+I didn't change my array to be a C array because I couldn't seem to get that to work, so I could probably get it faster.
+
 For my determinant function, I got Cython to be about twice as fast as my Python implementation.
 I didn't take full advantage of the Cython types (for example, making my matrix a double**) because
 I used a lot of Python-specific language in my original implementation like M[0:] that Cython didn't seem to like.
